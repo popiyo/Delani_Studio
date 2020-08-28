@@ -1,0 +1,8 @@
+.pointing-cursor {
+cursor: pointer;
+color: #0088cc;
+}
+
+.hide {
+  display: none;
+}
