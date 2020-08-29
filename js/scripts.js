@@ -1,24 +1,40 @@
 
 //array of the portfolio project names
 
-const = [
-
-  msg-workp1:"null project",
-  msg-workp2:"mighty ontario",
-  msg-workp3:"hexagon works",
-  msg-workp4:"jim carrey",
-  msg-workp5:"good day",
-  msg-workp6:"bio data",
-  msg-workp7:"burned logos",
-  msg-workp8:"giraffe manenoz",
-
-
-]
+const porfolioNames = {
+  workp1:"null project",
+  workp2:"mighty ontario",
+  workp3:"hexagon works",
+  workp4:"jim carrey",
+  workp5:"good day",
+  workp6:"bio data",
+  workp7:"burned logos",
+  workp8:"giraffe manenoz"
+};
 
 
-function display_image_text (element) {
-  alert(element.alt);
+function display_image_text(element) {
+
+  //get the correct name of the element we are unhiding to show the text of the portfolio
+  var elementToUnhide = "msg-"+element.id;
+  $("div#"+elementToUnhide).removeClass("hide");
+
+  if (elementToUnhide === "msg-workp2" )
+    $("div#"+elementToUnhide).addClass("text-danger");
+  else if (elementToUnhide === "msg-workp5" )
+    $("div#"+elementToUnhide).addClass("text-success");
+  else
+    $("div#"+elementToUnhide).addClass("text-light");
+
+
+  $("div#"+elementToUnhide).addClass("font-weight-bold text-uppercase thick_border");
+  $("div#"+elementToUnhide).append("<p>" + porfolioNames[element.id] + "</p>");
+
+  //$("div#"+elementToUnhide).append(porfolioNames[element.id]);
+
+
 }
+
 
 
 
@@ -74,6 +90,13 @@ $(document).ready(function(){
 
 $(".portfolio-image").mouseover(function(){
  display_image_text(this);
+  //display_image_text($(this);
+});
+
+$(".portfolio-text").mouseleave(function(){
+  $(this).addClass("hide");
+  $(this).empty();
+
   //display_image_text($(this);
 });
 
