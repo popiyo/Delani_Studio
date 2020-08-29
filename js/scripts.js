@@ -40,14 +40,24 @@ function display_image_text(element) {
 
 //make the initial what we do text dissapear
 $(document).ready(function(){
+
+  //respond to submit_client_info
+  $("form").click(function(event){
+
+    var clientName = $("#contact_name").val();
+    alert("Thank you " + clientName + " for reaching out to us. We shall get back to you within 2 working days.");
+    event.preventDefault();
+  });
+
+
+
+
+  //default the status of the What we do section
   $("div#wwd_Design").addClass("hide text-center");
   $("div#wwd_Development").addClass("hide text-center");
   $("div#wwd_Product_Management").addClass("hide text-center");
   $(".card-body").addClass("text-center");
   $(".h_wwd").addClass("font-weight-bold");
-
-
-
 
 
   //functionality to toggle the Design textarea
@@ -90,14 +100,15 @@ $(document).ready(function(){
 
 $(".portfolio-image").mouseover(function(){
  display_image_text(this);
-  //display_image_text($(this);
+
 });
 
+//when mouse leaves any portfolio, we reset the elements
 $(".portfolio-text").mouseleave(function(){
   $(this).addClass("hide");
   $(this).empty();
 
-  //display_image_text($(this);
+
 });
 
 
