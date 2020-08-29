@@ -1,17 +1,13 @@
-# My Portfolio Website
-#### Created to showcase JavaScript 101 understanding 14.08.2020
+# Delani Studio
+#### Created to showcase Bootstrap and JQuery understanding 30.08.2020
 #### By Peter Opiyo  moringaschool
 ## Description
 OBJECTIVES
 
+    Making Use of jQuery in DOM
+    Responsive Website designed
+    Form Data Submission and reading
 
-    The project uses one or more javascript functions.
-    Appropriate control flows and logical operators are used in the project.
-    The project makes use of one or more arrays in javascript.
-    The project uses a  HTML input to collect user data.
-    The project uses a custom CSS stylesheet that incorporates cascading, box model and floats.
-    The project works as expected, achieving the functionality required.
-    The project demonstrates an understanding of the week's concepts. If requested, you should be able to explain your code to your instructor.
 
 ## Author
 Peter Opiyo - popiyo
@@ -25,24 +21,23 @@ Peter Opiyo - popiyo
 There are no known Bugs
 
 ## Link to Github pages
-https://popiyo.github.io/akhan_names/
+https://popiyo.github.io/Delani_Studio/
 
-## BDD
-The user interface was first designed to capture what the user desired to achieve.
+## Business Logic vs UI Logic
+The user interface was first designed to capture what the user desired to see.
 As the user,You will be able to:
 
-* See a  small description of what the application does on the landing page.
-* View the Culture Page Details with the names that are available in Akan.
-* A link to the page which is the tool for getting your Weekday Birthday and Akon Name.
-* Enter my birthday through a form.
-* Choose what gender I am.
-* Click the submit button to see what my Akan name would be.
-8 Links to reconnect you to the various places on the Site.
+* Have a hover effect on portflio
+* Receive popup confirmation for contacting us
+* The pages are Responsive
+* What we do toggles in details
 
 
 
 ## Technologies Used
-HTML, CSS, JavaScript
+* HTML,
+* CSS, bootstrap,
+* JavaScript, jQuery
 
 ## Support and contact details
 popiyo@slack
